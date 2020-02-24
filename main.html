@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Landing page</title>
+    <link rel="stylesheet" type="text/css" href="main.css" media="screen"/>
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="header-wrapper" id="main">
+        <header >
+            <a href="#">
+                <h1 class="h1">Basket</h1>
+                <img src="img/logo.png" alt="Company's logo" class="logo">
+                <h1 class="h1">Shoes</h1>
+            </a>
+            <nav>
+                <ul class="h-list">
+                    <li>
+                        <a href="#"> Home </a>
+                    </li>
+                    <li>
+                        <a href="#product-details"> Details </a>
+                    </li>
+                    <li>
+                        <a href="#feedback"> Contact us </a>
+                    </li>
+                    <li>
+                        <a href="#company"> About us </a>
+                    </li>
+                    <li class="delimeter">
+                        &#124;
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/search4.png" alt="Search icon" class="search-icon">
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <main>
+        <section class="main">
+            <article class="description">
+                <h1>Adidas D Rose 9 Black</h1>
+                <p>Pre  order  available</p>
+                <p>Price:  $150.0</p>
+                <p>Color:  black/red/white/grey</p>
+                <div class="button-wrapper">
+                    <button onclick="location.href='#feedback'" class="order" type="button">Order</button>
+                </div>
+            </article>
+            <img src="img/product111.jpg" class="product">
+        </section>
+        <section class="brief-description" id="product-details">
+            <article>
+                <h1>
+                    Product details
+                </h1>
+                <h2>
+                    Description
+                </h2>
+
+                <div class="product-description">
+                    <img src="img/product9.jpg" alt="D Rose 9" class="product2">
+                    <div class="p-d-text">
+                        <h3>
+                            D ROSE 9 SHOES
+                        </h3>
+                        <h4>
+                            B-BALL SHOES DESIGNED FOR DERRICK ROSE'S GAME.
+                        </h4>
+                        <p>Designed for speed and agility, these basketball shoes are inspired by Derrick Rose's signature style.
+                            Built with a sock-like construction and a reinforced heel for lateral stability and fit, they feature flexible midsole cushioning for attacking the lane in comfort.
+                            The rubber outsole provides lightweight traction.
+                        </p>
+                    </div>
+                </div>
+                <h2>
+                    Specification
+                </h2>
+                <div class="specification">
+                    <ul>
+                        <li>
+                            Regular fit
+                        </li>
+                        <li>
+                            Lace closure
+                        </li>
+                        <li>
+                            Knit upper with reinforced heel
+                        </li>
+
+                    </ul>
+                    <ul>
+                        <li>
+                            Textile lining; Rubber outsole
+                        </li>
+                        <li>
+                            Flexible Bounce midsole cushioning; 3D shank for lightweight support and torsional rigidity
+                        </li>
+                        <li>
+                            Imported
+                        </li>
+                    </ul>
+                </div>
+            </article>
+
+        </section>
+        <section id="feedback" class="feedback">
+            <h1>Contact us</h1>
+            <form method="post" action="#feedback">
+                <label for="form-name">Your name:</label>
+                <input type="text" id="form-name" name="name" placeholder="Andy">
+                <label for="form-email">Email: </label>
+                <input type="text" id="form-email" name="email" placeholder="itmo@ifmo.ru">
+                <label for="form-message">Message: </label>
+                <input type="text" id="form-message" name="message" placeholder="Your message">
+            </form>
+            <button type="button">Submit</button>
+        </section>
+    </main>
+
+    <footer class="footer" id="company">
+        <section id="nav">
+            <h1>Navigation</h1>
+            <p>
+                <a href="#">Home</a>
+            </p>
+            <p>
+                <a href="#product-details">Details</a>
+            </p>
+            <p>
+                <a href="#feedback">About us</a>
+            </p>
+        </section>
+        <section id="about">
+            <h1>
+                About us
+            </h1>
+            <p>
+                Address: Ordinarnaya 19, St.Petersburg, Russia
+            </p>
+            <p>
+                Phone: 8(800)555-35-35
+            </p>
+            <p>
+                Email: itmo@ifmo.ru
+            </p>
+        </section>
+    </footer>
+</body>
+</html>
