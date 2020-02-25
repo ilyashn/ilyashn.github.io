@@ -8,14 +8,7 @@ html {
     scroll-behavior: smooth;
 }
 
-.header-wrapper {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 106px;
-    background-color: white;
-}
-header {
+.h-content {
     height: inherit;
     width: 70%;
     margin: 0 15%;
@@ -23,6 +16,14 @@ header {
     flex-direction: row;
     justify-content: space-between;
     border-bottom: #666666 0.001em solid;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 106px;
+    background-color: white;
 }
 
 nav {
@@ -34,7 +35,7 @@ header a {
     text-decoration: none;
 }
 
-.header-wrapper h1 {
+.h-content h2 {
     font-family: "Comic Sans MS";
     font-size: 27px;
     color: #292929;
@@ -61,7 +62,6 @@ header a {
     display: inline-block;
     font-size: 25px;
     margin: 0 20px;
-    transition-duration: 0.3s;
 }
 
 .h-list a {
@@ -101,8 +101,8 @@ main {
 }
 
 .description h1 {
-    margin-top: 10%;
-    margin-bottom: 10%;
+    margin-top: 8%;
+    margin-bottom: 5%;
     margin-left: 8%;
     font-size: 40px;
     display: inline-block;
@@ -119,15 +119,24 @@ main {
     margin-bottom: 3%;
     margin-left: 8%;
     font-family: Impact;
-    font-size: 27px;
+    font-size: 25px;
     color: black;
 }
 
-
-
+#phone {
+    color: white;
+    letter-spacing: 2px;
+    text-shadow: 3px 0 0 black, -3px 0 0 black, 0 3px 0 black, 0 -3px 0 black, 2px 2px black, -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black;
+    margin-top: 4%;
+    text-decoration: none;
+    font-size: 27px;
+}
+.button-wrapper {
+    text-align: center;
+}
 .order{
     margin-left: 8%;
-    margin-top: 10%;
+    margin-top: 5%;
     border: none;
     border-radius: 10px;
     background-color: red;
@@ -141,7 +150,6 @@ main {
     background-color: #666666;
 }
 
-
 .product {
     height: 75%;
     width: 55%;
@@ -154,15 +162,15 @@ main {
     padding-top: 75px;
 }
 
-.brief-description h1 {
+.brief-description h2 {
     margin-left: 6%;
     width: 100%;
     font-size: 30px;
     font-family: "Impact";
     letter-spacing: 2px;
-    padding-bottom: 20px;
+    padding-bottom: 15px;
 }
-.brief-description h2 {
+.brief-description h3 {
     margin-left: 6%;
     letter-spacing: 2px;
     width: 100%;
@@ -175,12 +183,14 @@ main {
     margin-top: 4%;
 }
 
-.p-d-text h3 {
-    margin-left: 10%;
-}
-
 .p-d-text h4 {
     margin-left: 10%;
+    font-size: 25px;
+}
+
+.p-d-text h5 {
+    margin-left: 10%;
+    font-size: 20px;
 }
 
 .p-d-text p {
@@ -214,16 +224,17 @@ main {
 }
 
 .feedback {
+    margin-left: 13%;
     width: 75%;
     padding-top: 75px;
     display: block;
     flex-direction: row;
     justify-content: space-between;
-    margin-left: 13%;
+
 }
 
-.feedback h1 {
-    margin-left: 4%;
+.feedback h2 {
+    margin-left: 3%;
     width: 100%;
     font-size: 30px;
     font-family: "Impact";
@@ -236,14 +247,14 @@ form {
     width: 50%;
     margin: 0 auto 0 auto;
     font-size: 24px;
+
 }
 
 .feedback form input {
-    margin: 0 0 10px 0;
+    margin: 5px 0 10px 0;
     border-radius: 3px;
     border: 1px #666666 solid;
     padding: 15px 15px 15px 15px;
-    margin-top: 5px;
 }
 
 .feedback form label {
@@ -289,7 +300,7 @@ footer {
     margin-bottom: 20px;
 }
 
-footer h1 {
+footer h2 {
     margin-left: 5%;
     width: 100%;
     font-size: 30px;
