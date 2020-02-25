@@ -8,31 +8,31 @@
     <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <header>
+    <header class="header">
         <div class="h-content">
             <a href="#">
                 <h2>Basket</h2>
                 <img src="img/logo.png" alt="Company's logo" class="logo">
                 <h2>Shoes</h2>
             </a>
-            <nav>
+            <nav class="h-nav">
                 <ul class="h-list">
-                    <li>
+                    <li class="h-element">
                         <a href="#"> Home </a>
                     </li>
-                    <li>
+                    <li class="h-element">
                         <a href="#product-details"> Details </a>
                     </li>
-                    <li>
+                    <li class="h-element">
                         <a href="#feedback"> Contact us </a>
                     </li>
-                    <li>
+                    <li class="h-element">
                         <a href="#company"> About us </a>
                     </li>
                     <li class="delimeter">
                         &#124;
                     </li>
-                    <li>
+                    <li class="h-element">
                         <a href="#">
                             <img src="img/search4.png" alt="Search icon" class="search-icon">
                         </a>
@@ -41,21 +41,28 @@
             </nav>
     </div>
     </header>
-    <main>
-        <section class="main">
-            <article class="description">
+    <main class="main">
+        <section class="main-content">
+            <div class="description">
                 <h1>Adidas D Rose 9 Black</h1>
-                <p>Pre  order  available</p>
-                <p>Price:  $150.0</p>
-                <p>Color:  black/red/white/grey</p>
+                <ul class="h-l">
+                    <li class="descript-elem">
+                        Pre  order  available
+                    </li>
+                    <li class="descript-elem">
+                        Price:  $150.0
+                    </li>
+                    <li class="descript-elem">
+                        Color:  black/red/white/grey
+                    </li>
+                </ul>
                 <div class="button-wrapper">
                     <button onclick="location.href='#feedback'" class="order" type="button">Order</button>
-                    <p>
-                        <a href="" id="phone">8 (800) 555-35-35</a>
-                    </p>
+                    <span class="phone-number">
+                        <a href="" class="phone">8 (800) 555-35-35</a>
+                    </span>
                 </div>
-
-            </article>
+            </div>
             <img src="img/product111.jpg" class="product" alt="D Rose 9 back view">
         </section>
         <section class="brief-description" id="product-details">
@@ -75,7 +82,7 @@
                         <h5>
                             B-BALL SHOES DESIGNED FOR DERRICK ROSE'S GAME.
                         </h5>
-                        <p>Designed for speed and agility, these basketball shoes are inspired by Derrick Rose's signature style.
+                        <p class="product-details">Designed for speed and agility, these basketball shoes are inspired by Derrick Rose's signature style.
                             Built with a sock-like construction and a reinforced heel for lateral stability and fit, they feature flexible midsole cushioning for attacking the lane in comfort.
                             The rubber outsole provides lightweight traction.
                         </p>
@@ -86,25 +93,25 @@
                 </h3>
                 <div class="specification">
                     <ul>
-                        <li>
+                        <li class="specification-l">
                             Regular fit
                         </li>
-                        <li>
+                        <li class="specification-l">
                             Lace closure
                         </li>
-                        <li>
+                        <li class="specification-l">
                             Knit upper with reinforced heel
                         </li>
 
                     </ul>
                     <ul>
-                        <li>
+                        <li class="specification-l">
                             Textile lining; Rubber outsole
                         </li>
-                        <li>
+                        <li class="specification-l">
                             Flexible Bounce midsole cushioning; 3D shank for lightweight support and torsional rigidity
                         </li>
-                        <li>
+                        <li class="specification-l">
                             Imported
                         </li>
                     </ul>
@@ -113,7 +120,7 @@
         </section>
         <section id="feedback" class="feedback">
             <h2>Contact us</h2>
-            <form method="post" action="#feedback">
+            <form method="post" action="#feedback" class="form">
                 <label for="form-name">Your name:</label>
                 <input type="text" id="form-name" name="name" placeholder="Andy">
                 <label for="form-email">Email: </label>
@@ -126,31 +133,35 @@
     </main>
 
     <footer class="footer" id="company">
-        <nav id="nav">
+        <nav class="f-nav">
             <h2>Navigation</h2>
-            <p>
-                <a href="#">Home</a>
-            </p>
-            <p>
-                <a href="#product-details">Details</a>
-            </p>
-            <p>
-                <a href="#feedback">About us</a>
-            </p>
+            <ul class="f-list">
+                <li class="f-element">
+                    <a href="#">Home</a>
+                </li>
+                <li class="f-element">
+                    <a href="#product-details">Details</a>
+                </li>
+                <li class="f-element">
+                    <a href="#feedback">About us</a>
+                </li>
+            </ul>
         </nav>
-        <section id="about">
+        <section class="about">
             <h2>
                 About us
             </h2>
-            <p>
-                Address: Ordinarnaya 19, St.Petersburg, Russia
-            </p>
-            <p>
-                Phone: 8(800)555-35-35
-            </p>
-            <p>
-                Email: itmo@ifmo.ru
-            </p>
+            <ul class="f2-list">
+                <li class="f-element">
+                    Address: Ordinarnaya 19, St.Petersburg, Russia
+                </li>
+                <li class="f-element">
+                    Phone: 8(800)555-35-35
+                </li>
+                <li class="f-element">
+                    Email: itmo@ifmo.ru
+                </li>
+            </ul>
         </section>
     </footer>
 </body>

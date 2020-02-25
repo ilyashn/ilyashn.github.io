@@ -18,7 +18,7 @@ html {
     border-bottom: #666666 0.001em solid;
 }
 
-header {
+.header {
     position: fixed;
     top: 0;
     width: 100%;
@@ -26,12 +26,12 @@ header {
     background-color: white;
 }
 
-nav {
+.h-nav {
     display: block;
     height: inherit;
 }
 
-header a {
+.header a {
     text-decoration: none;
 }
 
@@ -58,7 +58,8 @@ header a {
     margin: 0;
 }
 
-.h-list li {
+
+.h-element {
     display: inline-block;
     font-size: 25px;
     margin: 0 20px;
@@ -75,6 +76,9 @@ header a {
 
 .delimeter {
     color: red;
+    display: inline-block;
+    font-size: 25px;
+    margin: 0 20px;
 }
 
 .search-icon {
@@ -82,12 +86,12 @@ header a {
     width: 20px;
 }
 
-main {
+.main {
     margin-top: 166px;
     width: 100%;
 }
 
-.main {
+.main-content {
     width: 74%;
     display: flex;
     flex-direction: row;
@@ -113,8 +117,23 @@ main {
     color: black;
 }
 
-.description p {
+.h-l {
+    list-style: none;
+}
+
+.descript-elem {
     margin-top: 3%;
+    letter-spacing: 1px;
+    margin-bottom: 3%;
+
+    font-family: Impact;
+    font-size: 25px;
+    color: black;
+}
+
+
+.phone-number {
+    margin-top: 10%;
     letter-spacing: 1px;
     margin-bottom: 3%;
     margin-left: 8%;
@@ -123,16 +142,18 @@ main {
     color: black;
 }
 
-#phone {
+
+.phone {
     color: white;
     letter-spacing: 2px;
     text-shadow: 3px 0 0 black, -3px 0 0 black, 0 3px 0 black, 0 -3px 0 black, 2px 2px black, -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black;
-    margin-top: 4%;
+    margin-top: 2%;
     text-decoration: none;
     font-size: 27px;
 }
 .button-wrapper {
     text-align: center;
+    margin-top: 7%;
 }
 .order{
     margin-left: 8%;
@@ -193,7 +214,8 @@ main {
     font-size: 20px;
 }
 
-.p-d-text p {
+
+.product-details {
     width: 90%;
     margin-left: 10%;
     font-size: 19px;
@@ -217,7 +239,9 @@ main {
     margin-left: 6%;
 }
 
-.specification li {
+
+
+.specification-l {
     margin-bottom: 10px;
     font-size: 19px;
     font-weight: normal;
@@ -241,7 +265,7 @@ main {
     letter-spacing: 2px;
 }
 
-form {
+.form {
     display: flex;
     flex-direction: column;
     width: 50%;
@@ -281,17 +305,22 @@ form {
     width: 100%;
 }
 
-#nav {
+.f-nav {
     width: 50%;
     margin-left: 5%;
+    display: block;
 }
 
 
-#about {
+.phone-number {
+    margin-top: 10%;
+}
+
+.about {
     width: 50%;
 }
 
-footer {
+.footer {
     display: flex;
     width: 74%;
     margin-left: 13%;
@@ -300,7 +329,7 @@ footer {
     margin-bottom: 20px;
 }
 
-footer h2 {
+.footer h2 {
     margin-left: 5%;
     width: 100%;
     font-size: 30px;
@@ -308,17 +337,28 @@ footer h2 {
     letter-spacing: 2px;
 }
 
-footer p {
-    margin-left: 10%;
-    width: 100%;
-    font-size: 19px;
+
+.f2-list {
+    list-style: none;
 }
 
-footer a {
+.f-list {
+    list-style: none;
+}
+
+.f-element {
+    margin-bottom: 2%;
+}
+
+.footer a {
     text-decoration: none;
     color: #666666;
 }
 
-footer a:hover {
+.footer a:hover {
     color: red;
+}
+
+.f-element {
+    font-size: 20px;
 }
