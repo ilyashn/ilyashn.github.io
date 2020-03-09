@@ -1,0 +1,149 @@
+
+div {
+    display: block;
+}
+
+.loader {
+    top: 150px;
+    width: 500px;
+    left: 36%;
+    height: 200px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.loading {
+    left: 40%;
+    top: 75px;
+    text-align: center;
+    animation-fill-mode: backwards;
+    position: relative;
+    color: #293133;
+    font-size: 100px;
+    animation: loading 9s infinite ;
+}
+
+.ball1 {
+    position: absolute;
+    left: 20%;
+    height: 50px;
+    width: 50px;
+    border-radius: 0;
+    background-color: #696969;
+    animation: top-ball 3s infinite ease-in-out;
+}
+
+.ball2 {
+    position: absolute;
+    left: 40%;
+    height: 50px;
+    width: 50px;
+    border-radius: 0;
+    background-color: #A5A5A5;
+    animation: top-ball 3s infinite ease-in-out;
+    animation-delay: 0.25s;
+}
+
+.ball3 {
+    position: absolute;
+    left: 60%;
+    height: 50px;
+    width: 50px;
+    border-radius: 0;
+    background-color: #DCDCDC;
+    animation: top-ball 3s infinite ease-in-out;
+    animation-delay: 0.5s;
+}
+
+.ball4 {
+    position: absolute;
+    top: 50px;
+    left: 20%;
+    height: 50px;
+    width: 50px;
+    border-radius: 0;
+    background-color: #DCDCDC;
+    animation: bottom-ball 3s infinite ease-in-out;
+    animation-delay: 0.5s;
+}
+
+
+.ball5 {
+    position: absolute;
+    top: 50px;
+    left: 40%;
+    height: 50px;
+    width: 50px;
+    border-radius: 0;
+    background-color: #A5A5A5;
+    animation: bottom-ball 3s infinite ease-in-out;
+    animation-delay: 0.25s;
+}
+
+
+.ball6 {
+    position: absolute;
+    top: 50px;
+    left: 60%;
+    height: 50px;
+    width: 50px;
+    border-radius: 0;
+    background-color: #696969;
+    animation: bottom-ball 3s infinite ease-in-out;
+}
+
+
+@keyframes top-ball {
+    from {
+        transform: translate(0, 0) rotate(0deg);
+        border-radius: 0;
+    }
+
+
+    50% {
+        transform: translate(0, 100px) rotate(180deg);
+        border-radius: 50%;
+    }
+
+    100% {
+        transform: translate(0, 0) rotate(360deg);
+        border-radius: 0;
+    }
+}
+
+@keyframes bottom-ball {
+    from {
+        transform: translate(0, 0) rotate(0deg);
+        border-radius: 0;
+    }
+
+
+    50% {
+        transform: translate(0, -100px) rotate(180deg);
+        border-radius: 50%;
+    }
+
+    100% {
+        transform: translate(0, 0) rotate(360deg);
+        border-radius: 0;
+    }
+}
+
+@keyframes loading {
+    0% {
+        color: #696969;
+    }
+
+    33.3% {
+        color: #A5A5A5;
+    }
+
+    66.6% {
+        color: #DCDCDC;
+    }
+
+    100% {
+        color: #696969;
+    }
+}
