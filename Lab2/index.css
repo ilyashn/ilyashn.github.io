@@ -1,27 +1,32 @@
-
-div {
+.balls-group1 {
+    top: 145px;
+    width: 500px;
+    left: 33%;
+    height: 200px;
+    position: relative;
     display: block;
 }
 
-.loader {
-    top: 150px;
+.balls-group2 {
+    top: 115px;
     width: 500px;
-    left: 36%;
+    left: 33%;
     height: 200px;
     position: relative;
-    display: flex;
-    justify-content: space-between;
+    display: block;
 }
 
 .loading {
-    left: 40%;
-    top: 75px;
-    text-align: center;
-    animation-fill-mode: backwards;
+    left: 37%;
+    top: 70px;
     position: relative;
     color: #293133;
     font-size: 100px;
-    animation: loading 9s infinite ;
+    animation-name: loading-animation;
+    animation-duration: 9s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+
 }
 
 .ball1 {
@@ -29,9 +34,11 @@ div {
     left: 20%;
     height: 50px;
     width: 50px;
-    border-radius: 0;
     background-color: #696969;
-    animation: top-ball 3s infinite ease-in-out;
+    animation-name: top-ball-animation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
 }
 
 .ball2 {
@@ -39,9 +46,11 @@ div {
     left: 40%;
     height: 50px;
     width: 50px;
-    border-radius: 0;
     background-color: #A5A5A5;
-    animation: top-ball 3s infinite ease-in-out;
+    animation-name: top-ball-animation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
     animation-delay: 0.25s;
 }
 
@@ -50,9 +59,11 @@ div {
     left: 60%;
     height: 50px;
     width: 50px;
-    border-radius: 0;
     background-color: #DCDCDC;
-    animation: top-ball 3s infinite ease-in-out;
+    animation-name: top-ball-animation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
     animation-delay: 0.5s;
 }
 
@@ -62,12 +73,13 @@ div {
     left: 20%;
     height: 50px;
     width: 50px;
-    border-radius: 0;
     background-color: #DCDCDC;
-    animation: bottom-ball 3s infinite ease-in-out;
+    animation-name: bottom-ball-animation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
     animation-delay: 0.5s;
 }
-
 
 .ball5 {
     position: absolute;
@@ -75,12 +87,13 @@ div {
     left: 40%;
     height: 50px;
     width: 50px;
-    border-radius: 0;
     background-color: #A5A5A5;
-    animation: bottom-ball 3s infinite ease-in-out;
+    animation-name: bottom-ball-animation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
     animation-delay: 0.25s;
 }
-
 
 .ball6 {
     position: absolute;
@@ -88,18 +101,18 @@ div {
     left: 60%;
     height: 50px;
     width: 50px;
-    border-radius: 0;
     background-color: #696969;
-    animation: bottom-ball 3s infinite ease-in-out;
+    animation-name: bottom-ball-animation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
 }
 
-
-@keyframes top-ball {
+@keyframes top-ball-animation {
     from {
         transform: translate(0, 0) rotate(0deg);
-        border-radius: 0;
+        border-radius: 0%;
     }
-
 
     50% {
         transform: translate(0, 100px) rotate(180deg);
@@ -108,14 +121,14 @@ div {
 
     100% {
         transform: translate(0, 0) rotate(360deg);
-        border-radius: 0;
+        border-radius: 0%;
     }
 }
 
-@keyframes bottom-ball {
+@keyframes bottom-ball-animation {
     from {
         transform: translate(0, 0) rotate(0deg);
-        border-radius: 0;
+        border-radius: 0%;
     }
 
 
@@ -126,11 +139,11 @@ div {
 
     100% {
         transform: translate(0, 0) rotate(360deg);
-        border-radius: 0;
+        border-radius: 0%;
     }
 }
 
-@keyframes loading {
+@keyframes loading-animation {
     0% {
         color: #696969;
     }
