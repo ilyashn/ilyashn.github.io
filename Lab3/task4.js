@@ -1,11 +1,10 @@
 function User(name) {
     this.name = name;
-    this.getName = getName;
 }
 
-function getName() {
+User.prototype.getName = function(){
     return this.name;
-}
+};
 
 const me = new User('Rex');
 console.log(me.getName());
